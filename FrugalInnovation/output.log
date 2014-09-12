@@ -1,0 +1,127 @@
+[EL Info]: 2014-06-13 07:34:37.714--ServerSession(521246470)--EclipseLink, version: Eclipse Persistence Services - 2.5.1.v20130918-f2b9fc5
+[EL Info]: connection: 2014-06-13 07:34:38.926--ServerSession(521246470)--file:/C:/Users/Rajeshwari/Documents/NetBeansProjects/FrugalInnovation/build/classes/_PersistenceUnit login successful
+[EL Fine]: sql: 2014-06-13 07:34:38.997--ServerSession(521246470)--Connection(1676769418)--SELECT people_id FROM PEOPLE WHERE people_id <> people_id
+[EL Fine]: sql: 2014-06-13 07:34:39.072--ServerSession(521246470)--Connection(1676769418)--SELECT username FROM LOGINMODEL WHERE username <> username
+[EL Fine]: sql: 2014-06-13 07:34:39.076--ServerSession(521246470)--Connection(1676769418)--SELECT media_id FROM MEDIA WHERE media_id <> media_id
+[EL Fine]: sql: 2014-06-13 07:34:39.08--ServerSession(521246470)--Connection(1676769418)--SELECT project_id FROM PROJECT WHERE project_id <> project_id
+[EL Fine]: sql: 2014-06-13 07:34:39.084--ServerSession(521246470)--Connection(1676769418)--SELECT project_id FROM PROJECTPEOPLE WHERE project_id <> project_id
+[EL Fine]: sql: 2014-06-13 07:34:39.088--ServerSession(521246470)--Connection(1676769418)--SELECT project_id FROM PROJECTMEDIA WHERE project_id <> project_id
+[EL Fine]: sql: 2014-06-13 07:34:40.027--ServerSession(521246470)--Connection(1676769418)--SELECT media_id, file_path, type FROM MEDIA
+[EL Fine]: sql: 2014-06-13 07:35:24.95--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:35:25.125--ServerSession(521246470)--Connection(1676769418)--SELECT t1.project_id, t1.category, t1.end_date, t1.name, t1.result, t1.start_date, t1.status FROM PROJECTPEOPLE t3, PEOPLE t2, PROJECT t1, PEOPLE t0 WHERE (((((t1.name LIKE ? AND (t1.status = ?)) AND t1.category LIKE ?) AND (t0.people_id = t2.people_id)) AND t2.first_name LIKE ?) AND ((t3.project_id = t1.project_id) AND (t0.people_id = t3.people_id)))
+	bind => [%%, 1, %%, %shoba%]
+[EL Fine]: sql: 2014-06-13 07:35:50.979--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:35:51.026--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT WHERE ((name LIKE ? AND (status = ?)) AND category LIKE ?)
+	bind => [%%, 0, %%]
+[EL Fine]: sql: 2014-06-13 07:36:01.907--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:36:01.952--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT WHERE (name LIKE ? AND category LIKE ?)
+	bind => [%%, %%]
+[EL Fine]: sql: 2014-06-13 07:36:14.196--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:36:14.568--ServerSession(521246470)--Connection(1676769418)--SELECT media_id, file_path, type FROM MEDIA
+[EL Fine]: sql: 2014-06-13 07:36:14.625--ServerSession(521246470)--Connection(1676769418)--SELECT t1.media_id, t1.file_path, t1.type FROM PROJECT t0, PROJECTMEDIA t2, MEDIA t1 WHERE ((t0.project_id = ?) AND ((t2.media_id = t1.media_id) AND (t0.project_id = t2.project_id)))
+	bind => [2]
+[EL Fine]: sql: 2014-06-13 07:36:14.799--ServerSession(521246470)--Connection(1676769418)--SELECT people_id, company_name, email_address, first_name, last_name FROM PEOPLE
+[EL Fine]: sql: 2014-06-13 07:36:14.82--ServerSession(521246470)--Connection(1676769418)--SELECT t1.people_id, t1.company_name, t1.email_address, t1.first_name, t1.last_name FROM PROJECT t0, PROJECTPEOPLE t2, PEOPLE t1 WHERE ((t0.project_id = ?) AND ((t2.people_id = t1.people_id) AND (t0.project_id = t2.project_id)))
+	bind => [2]
+[EL Fine]: sql: 2014-06-13 07:37:03.541--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:37:03.575--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT WHERE (name LIKE ? AND category LIKE ?)
+	bind => [%lum%, %%]
+[EL Fine]: sql: 2014-06-13 07:37:20.23--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:37:20.264--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT WHERE (name LIKE ? AND category LIKE ?)
+	bind => [%%, %mobile%]
+[EL Fine]: sql: 2014-06-13 07:37:38.669--ServerSession(521246470)--Connection(1676769418)--SELECT username, password FROM LOGINMODEL WHERE (username = ?)
+	bind => [rntamaskar]
+[EL Fine]: sql: 2014-06-13 07:37:55.329--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:37:55.364--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT WHERE ((((name LIKE ? AND (status = ?)) AND category LIKE ?) AND (start_date >= ?)) AND (end_date <= ?))
+	bind => [%%, 0, %%, 2013-06-01, 2014-06-13]
+[EL Fine]: sql: 2014-06-13 07:38:06.712--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:38:06.747--ClientSession(1085447898)--Connection(1676769418)--INSERT INTO PROJECT (category, end_date, name, result, start_date, status) VALUES (?, ?, ?, ?, ?, ?)
+	bind => [null, null, null, null, null, null]
+[EL Fine]: sql: 2014-06-13 07:38:06.753--ClientSession(1085447898)--Connection(1676769418)--SELECT LAST_INSERT_ID()
+[EL Fine]: sql: 2014-06-13 07:38:06.954--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:38:07.442--ServerSession(521246470)--Connection(1676769418)--SELECT media_id, file_path, type FROM MEDIA
+[EL Fine]: sql: 2014-06-13 07:38:37.668--ClientSession(1387960437)--Connection(1676769418)--INSERT INTO MEDIA (file_path, type) VALUES (?, ?)
+	bind => [C:\Users\Rajeshwari\Desktop\Project Repository\AppforArtisans (1)\AppforArtisans.pdf, AppforArtisans.pdf]
+[EL Fine]: sql: 2014-06-13 07:38:37.673--ClientSession(1387960437)--Connection(1676769418)--SELECT LAST_INSERT_ID()
+[EL Fine]: sql: 2014-06-13 07:38:37.784--ClientSession(892547733)--Connection(1676769418)--INSERT INTO PROJECTMEDIA (media_id, project_id) VALUES (?, ?)
+	bind => [95, 84]
+[EL Fine]: sql: 2014-06-13 07:38:37.919--ServerSession(521246470)--Connection(1676769418)--SELECT media_id, file_path, type FROM MEDIA
+[EL Fine]: sql: 2014-06-13 07:38:37.947--ServerSession(521246470)--Connection(1676769418)--SELECT t1.media_id, t1.file_path, t1.type FROM PROJECT t0, PROJECTMEDIA t2, MEDIA t1 WHERE ((t0.project_id = ?) AND ((t2.media_id = t1.media_id) AND (t0.project_id = t2.project_id)))
+	bind => [84]
+[EL Fine]: sql: 2014-06-13 07:38:37.961--ClientSession(354934979)--Connection(1676769418)--INSERT INTO MEDIA (file_path, type) VALUES (?, ?)
+	bind => [C:\Users\Rajeshwari\Desktop\Project Repository\AppforArtisans (1)\SOKO app.pptx, SOKO app.pptx]
+[EL Fine]: sql: 2014-06-13 07:38:37.964--ClientSession(354934979)--Connection(1676769418)--SELECT LAST_INSERT_ID()
+[EL Fine]: sql: 2014-06-13 07:38:38.009--ClientSession(892547733)--Connection(1676769418)--INSERT INTO PROJECTMEDIA (media_id, project_id) VALUES (?, ?)
+	bind => [96, 84]
+[EL Fine]: sql: 2014-06-13 07:38:38.137--ServerSession(521246470)--Connection(1676769418)--SELECT media_id, file_path, type FROM MEDIA
+[EL Fine]: sql: 2014-06-13 07:38:38.164--ServerSession(521246470)--Connection(1676769418)--SELECT t1.media_id, t1.file_path, t1.type FROM PROJECT t0, PROJECTMEDIA t2, MEDIA t1 WHERE ((t0.project_id = ?) AND ((t2.media_id = t1.media_id) AND (t0.project_id = t2.project_id)))
+	bind => [84]
+[EL Fine]: sql: 2014-06-13 07:38:41.656--ServerSession(521246470)--Connection(1676769418)--SELECT people_id, company_name, email_address, first_name, last_name FROM PEOPLE
+[EL Fine]: sql: 2014-06-13 07:38:41.662--ServerSession(521246470)--Connection(1676769418)--SELECT people_id, company_name, email_address, first_name, last_name FROM PEOPLE
+[EL Fine]: sql: 2014-06-13 07:38:41.754--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:38:47.841--ServerSession(521246470)--Connection(1676769418)--SELECT t1.project_id, t1.category, t1.end_date, t1.name, t1.result, t1.start_date, t1.status FROM PROJECTPEOPLE t0, PROJECT t1 WHERE ((t0.people_id = ?) AND (t1.project_id = t0.project_id))
+	bind => [1]
+[EL Fine]: sql: 2014-06-13 07:38:47.853--ClientSession(759111799)--Connection(1676769418)--INSERT INTO PROJECTPEOPLE (people_id, project_id) VALUES (?, ?)
+	bind => [1, 84]
+[EL Fine]: sql: 2014-06-13 07:38:48.028--ServerSession(521246470)--Connection(1676769418)--SELECT people_id, company_name, email_address, first_name, last_name FROM PEOPLE
+[EL Fine]: sql: 2014-06-13 07:38:48.034--ServerSession(521246470)--Connection(1676769418)--SELECT t1.people_id, t1.company_name, t1.email_address, t1.first_name, t1.last_name FROM PROJECT t0, PROJECTPEOPLE t2, PEOPLE t1 WHERE ((t0.project_id = ?) AND ((t2.people_id = t1.people_id) AND (t0.project_id = t2.project_id)))
+	bind => [84]
+[EL Fine]: sql: 2014-06-13 07:38:50.428--ServerSession(521246470)--Connection(1676769418)--SELECT t1.project_id, t1.category, t1.end_date, t1.name, t1.result, t1.start_date, t1.status FROM PROJECTPEOPLE t0, PROJECT t1 WHERE ((t0.people_id = ?) AND (t1.project_id = t0.project_id))
+	bind => [8]
+[EL Fine]: sql: 2014-06-13 07:38:50.439--ClientSession(759111799)--Connection(1676769418)--INSERT INTO PROJECTPEOPLE (people_id, project_id) VALUES (?, ?)
+	bind => [8, 84]
+[EL Fine]: sql: 2014-06-13 07:38:50.656--ServerSession(521246470)--Connection(1676769418)--SELECT people_id, company_name, email_address, first_name, last_name FROM PEOPLE
+[EL Fine]: sql: 2014-06-13 07:38:50.663--ServerSession(521246470)--Connection(1676769418)--SELECT t1.people_id, t1.company_name, t1.email_address, t1.first_name, t1.last_name FROM PROJECT t0, PROJECTPEOPLE t2, PEOPLE t1 WHERE ((t0.project_id = ?) AND ((t2.people_id = t1.people_id) AND (t0.project_id = t2.project_id)))
+	bind => [84]
+[EL Fine]: sql: 2014-06-13 07:39:00.226--ClientSession(892547733)--Connection(1676769418)--UPDATE PROJECT SET category = ?, end_date = ?, name = ?, result = ?, start_date = ?, status = ? WHERE (project_id = ?)
+	bind => [Random, 2014-06-13, Project Demo, Completed, 2014-06-13, 0, 84]
+[EL Fine]: sql: 2014-06-13 07:39:05.753--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:39:05.783--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT WHERE ((((name LIKE ? AND (status = ?)) AND category LIKE ?) AND (start_date >= ?)) AND (end_date <= ?))
+	bind => [%%, 0, %%, 2014-06-13, 2014-06-13]
+[EL Fine]: sql: 2014-06-13 07:39:12.147--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:39:12.53--ServerSession(521246470)--Connection(1676769418)--SELECT media_id, file_path, type FROM MEDIA
+[EL Fine]: sql: 2014-06-13 07:39:12.628--ServerSession(521246470)--Connection(1676769418)--SELECT media_id, file_path, type FROM MEDIA
+[EL Fine]: sql: 2014-06-13 07:39:12.653--ServerSession(521246470)--Connection(1676769418)--SELECT t1.media_id, t1.file_path, t1.type FROM PROJECT t0, PROJECTMEDIA t2, MEDIA t1 WHERE ((t0.project_id = ?) AND ((t2.media_id = t1.media_id) AND (t0.project_id = t2.project_id)))
+	bind => [84]
+[EL Fine]: sql: 2014-06-13 07:39:12.736--ServerSession(521246470)--Connection(1676769418)--SELECT people_id, company_name, email_address, first_name, last_name FROM PEOPLE
+[EL Fine]: sql: 2014-06-13 07:39:12.742--ServerSession(521246470)--Connection(1676769418)--SELECT t1.people_id, t1.company_name, t1.email_address, t1.first_name, t1.last_name FROM PROJECT t0, PROJECTPEOPLE t2, PEOPLE t1 WHERE ((t0.project_id = ?) AND ((t2.people_id = t1.people_id) AND (t0.project_id = t2.project_id)))
+	bind => [84]
+[EL Fine]: sql: 2014-06-13 07:39:32.071--ClientSession(1839594852)--Connection(1676769418)--DELETE FROM PROJECTMEDIA WHERE (media_id = ?)
+	bind => [96]
+[EL Fine]: sql: 2014-06-13 07:39:32.076--ClientSession(1839594852)--Connection(1676769418)--DELETE FROM MEDIA WHERE (media_id = ?)
+	bind => [96]
+[EL Fine]: sql: 2014-06-13 07:39:32.285--ServerSession(521246470)--Connection(1676769418)--SELECT media_id, file_path, type FROM MEDIA
+[EL Fine]: sql: 2014-06-13 07:39:32.308--ServerSession(521246470)--Connection(1676769418)--SELECT t1.media_id, t1.file_path, t1.type FROM PROJECT t0, PROJECTMEDIA t2, MEDIA t1 WHERE ((t0.project_id = ?) AND ((t2.media_id = t1.media_id) AND (t0.project_id = t2.project_id)))
+	bind => [84]
+[EL Fine]: sql: 2014-06-13 07:39:38.895--ClientSession(1146449255)--Connection(1676769418)--DELETE FROM PROJECTPEOPLE WHERE (people_id = ?)
+	bind => [8]
+[EL Fine]: sql: 2014-06-13 07:39:38.899--ClientSession(1146449255)--Connection(1676769418)--DELETE FROM PEOPLE WHERE (people_id = ?)
+	bind => [8]
+[EL Fine]: sql: 2014-06-13 07:39:39.075--ServerSession(521246470)--Connection(1676769418)--SELECT people_id, company_name, email_address, first_name, last_name FROM PEOPLE
+[EL Fine]: sql: 2014-06-13 07:39:39.08--ServerSession(521246470)--Connection(1676769418)--SELECT t1.people_id, t1.company_name, t1.email_address, t1.first_name, t1.last_name FROM PROJECT t0, PROJECTPEOPLE t2, PEOPLE t1 WHERE ((t0.project_id = ?) AND ((t2.people_id = t1.people_id) AND (t0.project_id = t2.project_id)))
+	bind => [84]
+[EL Fine]: sql: 2014-06-13 07:39:46.517--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:39:48.754--ServerSession(521246470)--Connection(1676769418)--SELECT media_id, file_path, type FROM MEDIA
+[EL Fine]: sql: 2014-06-13 07:39:51.752--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:39:51.772--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT WHERE ((((name LIKE ? AND (status = ?)) AND category LIKE ?) AND (start_date >= ?)) AND (end_date <= ?))
+	bind => [%%, 0, %%, 2014-06-13, 2014-06-13]
+[EL Fine]: sql: 2014-06-13 07:39:54.523--ClientSession(807507959)--Connection(1676769418)--DELETE FROM PROJECTMEDIA WHERE (project_id = ?)
+	bind => [84]
+[EL Fine]: sql: 2014-06-13 07:39:54.526--ClientSession(807507959)--Connection(1676769418)--DELETE FROM PROJECTPEOPLE WHERE (project_id = ?)
+	bind => [84]
+[EL Fine]: sql: 2014-06-13 07:39:54.53--ClientSession(807507959)--Connection(1676769418)--DELETE FROM PROJECT WHERE (project_id = ?)
+	bind => [84]
+[EL Fine]: sql: 2014-06-13 07:40:09.951--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:40:10.201--ServerSession(521246470)--Connection(1676769418)--SELECT media_id, file_path, type FROM MEDIA
+[EL Fine]: sql: 2014-06-13 07:40:10.223--ServerSession(521246470)--Connection(1676769418)--SELECT t1.media_id, t1.file_path, t1.type FROM PROJECT t0, PROJECTMEDIA t2, MEDIA t1 WHERE ((t0.project_id = ?) AND ((t2.media_id = t1.media_id) AND (t0.project_id = t2.project_id)))
+	bind => [71]
+[EL Fine]: sql: 2014-06-13 07:40:10.31--ServerSession(521246470)--Connection(1676769418)--SELECT people_id, company_name, email_address, first_name, last_name FROM PEOPLE
+[EL Fine]: sql: 2014-06-13 07:40:10.317--ServerSession(521246470)--Connection(1676769418)--SELECT t1.people_id, t1.company_name, t1.email_address, t1.first_name, t1.last_name FROM PROJECT t0, PROJECTPEOPLE t2, PEOPLE t1 WHERE ((t0.project_id = ?) AND ((t2.people_id = t1.people_id) AND (t0.project_id = t2.project_id)))
+	bind => [71]
+[EL Fine]: sql: 2014-06-13 07:40:14.773--ServerSession(521246470)--Connection(1676769418)--SELECT project_id, category, end_date, name, result, start_date, status FROM PROJECT
+[EL Fine]: sql: 2014-06-13 07:40:15.057--ServerSession(521246470)--Connection(1676769418)--SELECT media_id, file_path, type FROM MEDIA
+[EL Fine]: sql: 2014-06-13 07:40:15.084--ServerSession(521246470)--Connection(1676769418)--SELECT t1.media_id, t1.file_path, t1.type FROM PROJECT t0, PROJECTMEDIA t2, MEDIA t1 WHERE ((t0.project_id = ?) AND ((t2.media_id = t1.media_id) AND (t0.project_id = t2.project_id)))
+	bind => [72]
+[EL Fine]: sql: 2014-06-13 07:40:15.183--ServerSession(521246470)--Connection(1676769418)--SELECT people_id, company_name, email_address, first_name, last_name FROM PEOPLE
+[EL Fine]: sql: 2014-06-13 07:40:15.191--ServerSession(521246470)--Connection(1676769418)--SELECT t1.people_id, t1.company_name, t1.email_address, t1.first_name, t1.last_name FROM PROJECT t0, PROJECTPEOPLE t2, PEOPLE t1 WHERE ((t0.project_id = ?) AND ((t2.people_id = t1.people_id) AND (t0.project_id = t2.project_id)))
+	bind => [72]
